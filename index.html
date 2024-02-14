@@ -8,67 +8,78 @@
 </head>
 <body>
     <header>
-        <p class="botaoSeletor" id="botao1">Opção 1</p>
-        <p class="botaoSeletor" id="botao2">Opção 2</p>
-        <p class="botaoSeletor" id="botao3">Opção 3</p>
+        <p class="botaoSeletor" id="botao1">Motivo da candidatação</p>
+        <p class="botaoSeletor" id="botao2">Sobre mim</p>
+        <p class="botaoSeletor" id="botao3">Minhas expectativas</p>
     </header>
 
     <main>
-        <div id="page1">
-            <article>
-                <p>111111111111 1111111111111111 111111111111 1111111111111 11111111 1111111 11111111111 1111111 111111111 1111111 1111111 111.</p>
+        <div id="pageInicial">
+            <div id="pageInicialTexto">
+                <p id="textoInicial">Apresentação sobre mim</p>
+                <p id="botaoComecar">Começar</p>
+            </div>
+            <img id="fotoLua" src="fotolua.png">
+        </div>
+        <div id="pageMotivos">
+            <article class="hidden">
+                <p>Jfoiadsjfioas fjasoidfja saiojdaois sdajd asjdaois</p>
             </article>
             
-            <article>
-                <img src="cuidado.png">
+            <article class="hidden">
+                <img class="imagensContent" src="cuidado.png">
             </article>
             
-            <article>
+            <article class="hidden">
                 <p>"O aroma do café recém-feito inundava a pequena cafeteria, misturando-se com as risadas e as conversas dos clientes que buscavam refúgio do frio inverno."</p>
             </article>
             
-            <article>
+            <article class="hidden">
                 <p>"O rugido do mar batendo contra as rochas era um lembrete constante da imponente força da natureza, enquanto as gaivotas sobrevoavam em círculos, buscando sua próxima presa."</p>
             </article>
         </div>
 
-        <div id="page2">
-            <article>
-                <p>22222222 22222222222 2222222222222222222 2222222222222 22222222 22222222222 22222222222 222222 2222222 22222222222 22 222.</p>
+        <div id="pageSobre">
+            <article class="objeto hidden">
+                <p>Meu nome é Lucas Figueiredo do Monte. Eu atualmente curso o 2º Ano do Ensino Médio no curso de Informática.</p>
             </article>
             
-            <article>
-                <img src="cuidado.png">
+            <article class="hidden">
+                <img class="imagensContent" src="me1.jpg">
             </article>
             
-            <article>
+            <article id="pageSobreExcecao" class="hidden">
                 <p>"O aroma do café recém-feito inundava a pequena cafeteria, misturando-se com as risadas e as conversas dos clientes que buscavam refúgio do frio inverno."</p>
             </article>
             
-            <article>
-                <p>"O rugido do mar batendo contra as rochas era um lembrete constante da imponente força da natureza, enquanto as gaivotas sobrevoavam em círculos, buscando sua próxima presa."</p>
+            <article class="hidden">
+                <img class="imagensContent" src="cuidado.png">
             </article>
         </div>
 
-        <div id="page3">
-            <article>
+        <div id="pageExpectativas">
+            <article class="hidden">
                 <p>333333 333333 33333333333 33333 33333 3333333 3333333 33333 3333333333 33333333 333333 33333333 3333333 333333 3333 3333333333 33333 3333</p>
             </article>
             
-            <article>
-                <img src="cuidado.png">
+            <article class="hidden">
+                <img class="imagensContent" src="cuidado.png">
             </article>
             
-            <article>
+            <article class="hidden">
                 <p>"O aroma do café recém-feito inundava a pequena cafeteria, misturando-se com as risadas e as conversas dos clientes que buscavam refúgio do frio inverno."</p>
             </article>
             
-            <article>
+            <article class="hidden">
                 <p>"O rugido do mar batendo contra as rochas era um lembrete constante da imponente força da natureza, enquanto as gaivotas sobrevoavam em círculos, buscando sua próxima presa."</p>
             </article>
         </div>
-
     </main>
+
+    <div id="transicao">
+        <img id="ferramentaTransicao" src="begetransicao.png">
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
