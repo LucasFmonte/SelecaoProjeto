@@ -13,7 +13,7 @@ header {
 }
 
 #pageInicialTexto {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 33%;
     margin-right: 33%;
     display: flex;
@@ -23,8 +23,8 @@ header {
 }
 #textoInicial {
     font-family: 'Nunito';
-    font-size: 4rem;
-    animation: mudarCores infinite 2s;
+    font-size: 3.5rem;
+    animation: mudarCores infinite 4s;
     z-index: 1;
 }
 #botaoComecar {
@@ -154,7 +154,7 @@ article {
     color: black;
     writing-mode: vertical-rl;
     right: 1%;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 @keyframes mudarCores {
@@ -172,4 +172,27 @@ article {
     to {
         color: blue;
     }
+}
+
+.estrelas {
+    display: initial;
+    position: fixed;
+    width: 45%;
+    left: 2%;
+    z-index: -1;
+    top: 1%;
+    opacity: 0.5;
+}
+
+#estrelas2 {
+    top: 50%;
+}
+
+#estrelas3 {
+    left: 50%;
+}
+
+#estrelas4 {
+    left: 50%;
+    top: 50%;
 }

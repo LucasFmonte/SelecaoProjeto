@@ -17,6 +17,8 @@ const imagemAlternante = document.querySelector('#imagemAlternada');
 const setaDireita = document.querySelector('#setaDireita');
 const setaEsquerda = document.querySelector('#setaEsquerda');
 
+const estrelas = document.querySelector('#divEstrelas');
+
 comecarBtn.addEventListener('click', () => {
     fotoTransicao.classList.toggle('transicionando');
     intervaloTransicao = setInterval(() => {
@@ -26,6 +28,7 @@ comecarBtn.addEventListener('click', () => {
         pageMotivos.style.display = 'none';
         pageSobre.style.display = 'flex';
         pageExpectativas.style.display = 'none';
+        estrelas.style.display = 'none';
         clearInterval(intervaloTransicao);
     }, 225);
 
@@ -41,6 +44,7 @@ pageMotivosBtn.addEventListener('click', () => {
         pageMotivos.style.display = 'flex';
         pageSobre.style.display = 'none';
         pageExpectativas.style.display = 'none';
+        estrelas.style.display = 'none';
         clearInterval(intervaloTransicao);
     }, 250);
 
@@ -56,6 +60,7 @@ pageSobreBtn.addEventListener('click', () => {
         pageSobre.style.display = 'flex';
         pageMotivos.style.display = 'none';
         pageExpectativas.style.display = 'none';
+        estrelas.style.display = 'none';
         clearInterval(intervaloTransicao);
     }, 225);
     
@@ -71,6 +76,7 @@ pageExpectativasBtn.addEventListener('click', () => {
         pageExpectativas.style.display = 'flex';
         pageSobre.style.display = 'none';
         pageMotivos.style.display = 'none';
+        estrelas.style.display = 'initial';
         clearInterval(intervaloTransicao);
     }, 225);
     
