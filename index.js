@@ -13,10 +13,15 @@ const navMenu = document.querySelector('header');
 const fotoTransicao = document.querySelector('#ferramentaTransicao');
 const elementosInvisiveis = document.querySelectorAll('.hidden')
 
+const imagemAlternante = document.querySelector('#imagemAlternada');
+const setaDireita = document.querySelector('#setaDireita');
+const setaEsquerda = document.querySelector('#setaEsquerda');
+
 comecarBtn.addEventListener('click', () => {
     fotoTransicao.classList.toggle('transicionando');
     intervaloTransicao = setInterval(() => {
         pageInicial.style.display = 'none';
+        document.documentElement.scrollTop = 0;
         navMenu.style.display = 'flex';
         pageMotivos.style.display = 'none';
         pageSobre.style.display = 'flex';
@@ -77,7 +82,6 @@ pageExpectativasBtn.addEventListener('click', () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
@@ -87,3 +91,32 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 elementosInvisiveis.forEach((el) => observer.observe(el));
+
+let indexFoto = 1;
+
+function mudarImagem(direcao) {
+    if(direcao == 1) {
+        if(indexFoto == 4) {
+            indexFoto = 1;
+        } else {
+            indexFoto++;
+        }
+        imagemAlternante.src = 'fotodojogo' + indexFoto + '.png';
+    }
+    else {
+        if(indexFoto == 1) {
+            indexFoto = 4;
+        } else {
+            indexFoto--;
+        }
+        imagemAlternante.innerHTML.src = 'fotodojogo' + indexFoto + '.png';
+    }
+}
+
+setaDireita.addEventListener('click', () => {
+    mudarImagem(1);
+});
+
+setaEsquerda.addEventListener('click', () => {
+    mudarImagem(-1);
+});
